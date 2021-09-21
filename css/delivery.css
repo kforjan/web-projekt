@@ -1,0 +1,70 @@
+#delivery {
+  width: max-content;
+    margin-left: 6.5%;
+    margin-top: 20px;
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    padding: 24px 17px 24px 92px;
+  }
+  
+  #delivery > div {
+    display: inline-flex;
+    justify-content: space-between;
+    height: 56px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: var(--darkGray);
+    align-items: center;
+  
+  }
+  
+  #delivery_time {
+    width: 246px;
+  }
+  
+  #delivery_time_ic, #delivery_driver_ic, #delivery_france_ic {
+    width: 48px;
+    height: 48px;
+  }
+  
+  #delivery_time_text, #delivery_driver_text, #delivery_france_text {
+    height: 40px;
+  }
+  
+  #delivery_time_text {
+    width: 182px;
+  }
+  
+  #delivery_driver {
+    width: 188px;
+    margin-left: 46px;
+  }
+  
+  #delivery_driver_text {
+  width: 124px;
+  }
+  
+  #delivery_france {
+    width: 236px;
+    margin-left: 39px;
+  }
+  
+  #delivery_france_text {
+    width: 172px;
+  }
+
+  @media only screen and (min-width: 1650px) {
+    #delivery {
+      margin-top: -64px;
+    }
+  }
+
+  @media only screen and (max-width: 1300px) {
+    #delivery {
+      margin-top: 0px;
+    }
+  }

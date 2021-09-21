@@ -1,0 +1,49 @@
+#h2_igBloc {
+          color: #313030;
+          display: inline;
+          text-decoration: none;
+          font-family: 'RobotoFont';
+          font-style: normal;
+          font-weight: 300;
+          font-size: 36px;
+          letter-spacing: 4px;
+}
+
+#h3_igBloc {
+          color: #313030;
+          display: inline;
+          font-family: 'RobotoFont';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+}
+
+#instagram_block {
+          display: grid;
+          justify-content: center;
+          align-content: center;
+          padding-bottom: 150px;
+}
+
+#first_igBlock {
+          grid-column: 1;
+          grid-row: 1;
+}
+
+#second_igBlock {
+          grid-column: 1;
+          grid-row: 2;
+}
+
+.instagram_picture {
+          width: 296px;
+          height: 299px;
+          padding-right: 24px;
+}
+
+@media screen and (max-width:1300px) {
+          #instagram_block {
+                    width: 70%;
+                    margin-left: 18%;
+          }
+}

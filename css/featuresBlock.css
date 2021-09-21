@@ -1,0 +1,17 @@
+#feature_block {
+          display: flex;
+          text-align: center;
+          padding-top: 56px;
+          padding-bottom: 56px;
+          margin-left: 13%;
+          margin-right: 13%;
+          margin-bottom: 72px;
+          background-color: var(--background);
+          justify-content: center;
+          align-items: center;
+}
+
+.feature_block_item {
+          width: 183px;
+          height: 126px;
+}

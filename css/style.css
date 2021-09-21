@@ -1,0 +1,94 @@
+@import url("header.css");
+@import url("landing_content.css");
+@import url("delivery.css");
+@import url('products.css');
+@import url("restaurants.css");
+@import url("branding_partner.css");
+@import url('locationMap.css');
+@import url('featuresBlock.css');
+@import url('instagramBlock.css');
+@import url('footer.css');
+@import url('minicart.css');
+@font-face {
+  font-family: "RobotoFont";
+  src: url('../assets/Roboto-Regular.ttf')format('truetype');
+}
+
+:root {
+  --accent: #FFE500;
+  --dark: #B79C10;
+  --light: #FFF7CC;
+  --textColor: #000000;
+  --darkGray: #3F4255;
+  --lightGray: #9093A6;
+  --background: #F2F4FA;
+}
+
+footer {
+  margin-left: 127px;
+  margin-right: 127px;
+  margin-bottom: 70px;
+}
+
+a {
+  text-decoration: none!important;
+  font-family: "RobotoFont";
+}
+
+body {
+  margin: 0px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-right: 1px solid #b5b5b5;
+  overflow-x: hidden;
+  text-align: center;
+  align-items: center;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #b5b5b5;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #ffdb00;
+}
+
+.sidenav .closebtn {
+  font-size: 36px;
+}
+
+table {
+  border-collapse: separate;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 100px;
+  border-radius: 10px;
+  border: 1px solid #b5b5b5;
+}
+
+thead th {
+  border-bottom: 1px solid #b5b5b5;
+  font-family: "RobotoFont";
+}
+
+td {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+tr {
+  font-family: "RobotoFont";
+}

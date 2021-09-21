@@ -1,0 +1,96 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 83.56%;
+  height: 51.8px;
+  margin-top: 55.78px;
+  padding: 0px 8.22%;
+}
+
+#menu_button {
+  width: 65px;
+  height: 51.8px;
+  margin: 0%;
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 70px;
+  position: relative;
+}
+
+#menu_button_ic {
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+}
+
+figure.logo {
+  width: 194.68px;
+  height: 42.77px;
+  margin: 0%;
+}
+
+header #buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+  height: 24px;
+}
+
+#cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 36px;
+  height: 24px;
+  color: var(--lightGray);
+  font-family: RobotoFont;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
+#ic_cart {
+  width: 24px;
+  height: 24px;
+}
+
+#ic_cart:hover {
+  cursor: pointer;
+}
+
+#cart span:nth-child(2) {
+  width: 10px;
+  height: 20px;
+}
+
+#log_in {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 108px;
+  height: 24px;
+  color: var(--lightGray);
+  font-family: RobotoFont;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
+#ic_person {
+  width: 24px;
+  height: 24px;
+}
+
+#log_in span:nth-child(2) {
+  width: 77px;
+  height: 20px;
+  font-size: 14px;
+}
