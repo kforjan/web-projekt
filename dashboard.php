@@ -15,8 +15,8 @@ checkLoginState();
 </head>
 <body>
 <div class="sidenav">
-  <figure>
-      <img src="assets\svg\logo.svg" alt="Čvaci.net logo" aria-label="Čvarci.net logo" class="img-fluid" />
+<figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Emoji_u1f36d.svg/2048px-Emoji_u1f36d.svg.png" width="100" height="100" alt="CandyShop logo" aria-label="CandyShop logo" />
   </figure>
   <br>
   <br>

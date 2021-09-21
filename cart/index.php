@@ -22,9 +22,9 @@ session_start();
     }
     </script>
     <div id="mySidenav" class="sidenav">
-        <figure>
-            <img src="..\assets\svg\logo.svg" alt="Čvaci.net logo" aria-label="Čvarci.net logo" class="img-fluid" />
-        </figure>
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Emoji_u1f36d.svg/2048px-Emoji_u1f36d.svg.png" width="100" height="100" alt="CandyShop logo" aria-label="CandyShop logo" />
+      </figure>
         <br>
         <br>
         <br>
@@ -43,8 +43,8 @@ session_start();
     <figure id="menu_button" role="menu" onclick="openNav()">
       <img id="menu_button_ic" src="../assets/svg/ic-menu-navigation.svg" alt="Menu Button" aria-label="Menu" class="img-fluid"/>
     </figure>
-    <figure >
-      <img src="..\assets\svg\logo.svg" alt="Čvaci.net logo" aria-label="Čvarci.net logo" class="img-fluid" />
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Emoji_u1f36d.svg/2048px-Emoji_u1f36d.svg.png" width="100" height="100" alt="CandyShop logo" aria-label="CandyShop logo" />
     </figure>
     <div id="buttons" aria-label="Account buttons">
       <div id="log_in" aria-label="Log in button">
@@ -146,7 +146,9 @@ session_start();
     <footer>
       <div id="footer_first_row">
         <div aria-label="footer_logo">
-          <img src="..\assets\svg\logo.svg" alt="Čvaci.net logo" aria-label="Čvarci.net logo" class='logo'>
+        <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Emoji_u1f36d.svg/2048px-Emoji_u1f36d.svg.png" width="50" height="50" alt="CandyShop logo" aria-label="CandyShop logo" />
+        </figure>
           <hr id='custom_line'>
         </div>
         <div aria-label="useful_links">
@@ -158,20 +160,20 @@ session_start();
       <div id="footer_second_row">
         <div aria-label="Social Networks">
           <a href="http://instagram.com">
-            <img src="..\assets\svg\instagram_icon.svg" alt="instagram_icon" class="social_network_icon" aria-label="Link to čvarci.net instagram">
+            <img src="..\assets\svg\instagram_icon.svg" alt="instagram_icon" class="social_network_icon" aria-label="Link to candyshop.hr instagram">
           </a>
           <a href="http://twitter.com">
-            <img src="..\assets\svg\twitter_icon.svg" alt="twitter_icon" class="social_network_icon" aria-label="Link to čvarci.net twitter">
+            <img src="..\assets\svg\twitter_icon.svg" alt="twitter_icon" class="social_network_icon" aria-label="Link to candyshop.hr twitter">
           </a>
           <a href="http://facebook.com">
-            <img src="..\assets\svg\facebook_icon.svg" alt="facebook_icon" class="social_network_icon" aria-label="Link to čvarci.net facebook" style="padding-right: 0px;">
+            <img src="..\assets\svg\facebook_icon.svg" alt="facebook_icon" class="social_network_icon" aria-label="Link to candyshop.hr facebook" style="padding-right: 0px;">
           </a>
         </div>
         <div aria-label="Other links">
           <a href="http://polica.com" class="footer_pages_2" aria-label="security policy">Polica privatnosti</a>
           <a href="http://uvjeti_korištenja.com" class="footer_pages_2" aria-label="terms of use">Uvjeti
             korištenja</a>
-          <a href="http://čvarci.net" class="footer_pages_2" aria-label="copyright 2021 čvarci.net" style="padding-right: 0px;">©2021 čvarci.net</a>
+          <a href="http://candyshop.hr" class="footer_pages_2" aria-label="copyright 2021 candyshop.hr" style="padding-right: 0px;">©2021 candyshop.hr</a>
         </div>
       </div>
     </footer>

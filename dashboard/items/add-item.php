@@ -17,19 +17,19 @@
 </head>
 <body>
 <div class="sidenav">
-  <figure>
-      <img src="..\..\assets\svg\logo.svg" alt="Čvaci.net logo" aria-label="Čvarci.net logo" class="img-fluid" />
-  </figure>
-  <br>
-  <br>
-  <br>
-  <br>
-  <a  href="../../index.php">Početna</a>
-  <hr>
-  <a style="color:black; font-weight:700;">Proizvod</a>
-  <hr>
-  <a href="../orders/index.php">Narudžbe</a>
-  <hr>
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Emoji_u1f36d.svg/2048px-Emoji_u1f36d.svg.png" width="100" height="100" alt="CandyShop logo" aria-label="CandyShop logo" />
+    </figure>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a  href="../../index.php">Početna</a>
+    <hr>
+    <a style="color:black; font-weight:700;">Proizvod</a>
+    <hr>
+    <a href="../orders/index.php">Narudžbe</a>
+    <hr>
 </div>
 <div style="margin-left:300px;">
     <div id="add_item_form">

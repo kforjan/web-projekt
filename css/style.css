@@ -15,9 +15,9 @@
 }
 
 :root {
-  --accent: #FFE500;
-  --dark: #B79C10;
-  --light: #FFF7CC;
+  --accent: #FFC0CB;
+  --dark: #FF8096;
+  --light: #FFE4E8;
   --textColor: #000000;
   --darkGray: #3F4255;
   --lightGray: #9093A6;
@@ -62,7 +62,7 @@ body {
 }
 
 .sidenav a:hover {
-  color: #ffdb00;
+  color: #FF8096;
 }
 
 .sidenav .closebtn {

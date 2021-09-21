@@ -7,10 +7,11 @@ unset($_SESSION['invalidQuantityItems']);
 
 <head>
   <meta charset="utf-8" />
-  <title>čvarci.net</title>
+  <title>CandyShop</title>
   <link rel="stylesheet" href="css/style.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script>
     let cartItems = [];
 
@@ -251,7 +252,7 @@ function closeNav() {
 </script>
 <div id="mySidenav" class="sidenav">
   <figure>
-      <img src="assets\svg\logo.svg" alt="Čvaci.net logo" aria-label="Čvarci.net logo" class="img-fluid" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Emoji_u1f36d.svg/2048px-Emoji_u1f36d.svg.png" width="100" height="100" alt="CandyShop logo" aria-label="CandyShop logo" />
   </figure>
   <br>
   <br>
@@ -272,9 +273,8 @@ function closeNav() {
     <figure id="menu_button" role="menu" onclick="openNav()">
       <img id="menu_button_ic" src="assets/svg/ic-menu-navigation.svg" alt="Menu Button" aria-label="Menu" class="img-fluid"/>
     </figure>
-
-    <figure >
-      <img src="assets\svg\logo.svg" alt="Čvaci.net logo" aria-label="Čvarci.net logo" class="img-fluid" />
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Emoji_u1f36d.svg/2048px-Emoji_u1f36d.svg.png" width="100" height="100" alt="CandyShop logo" aria-label="CandyShop logo" />
     </figure>
     <div id="buttons" aria-label="Account buttons">
       <div id="log_in" aria-label="Log in button">
@@ -302,8 +302,8 @@ function closeNav() {
     <main>
       <section id="landing_content" aria-label="Landing content">
         <div id="banner_content">
-          <h1 id="prime" aria-label="The best cvarci on your front door">
-            Najbolji čvarci na kućnom pragu
+          <h1 id="prime" aria-label="The best candy on your front door">
+            Najbolji slatkiši na svijetu
           </h1>
           <button id="button_order" aria-label="Order button" type="button">
             <strong aria-label="Delivery">DOSTAVA</strong>
@@ -311,44 +311,32 @@ function closeNav() {
           </button>
           <button aria-label="Download button" id="button_download" type="button">
             <strong aria-label="Download">PREUZMI</strong>
-            <span aria-label="On Cvarkomat"> Na čvarkomatu </span>
+            <span>U TRGOVINI </span>
           </button>
         </div>
         <figure id="banner_photo">
-          <img aria-label="Photo of cvarci" src="./assets/svg/banner_photo.svg" alt="Cvarci" class="img-fluid" />
+          <img aria-label="Photo of gummies" src="https://images8.alphacoders.com/908/908159.jpg" style="border-radius:500px;" />
         </figure>
       </section>
 
       <article id="delivery" aria-label="Delivery information">
         <div id="delivery_time" aria-label="Delivery time information">
-          <div id="delivery_time_ic">
-            <img src="./assets/svg/time_eat.svg" alt="Clock icon" aria-label="Delivery time clock emoticon">
-          </div>
-          <div id="delivery_time_text" aria-label="We deliver cvarci in less than 30 minutes">
-            dostavljamo čvarke za manje od 30 minuta
-          </div>
+          <i class="fa fa-car", style="font-size:40px; color:pink;"></i>
+          dostavljamo slatkiše
         </div>
         <div id="delivery_driver" aria-label="Delivery driver information">
-          <div id="delivery_driver_ic">
-            <img src="./assets/svg/delivery.svg" alt="Delivery man icon" aria-label="Delivery man emoticon">
-          </div>
-          <div id="delivery_driver_text" aria-label="Our drivers ride tomos bikes">
-            naši šoferi voze tomose
-          </div>
+          <i class="fa fa-heart", style="font-size:40px; color:pink;"></i>
+            rađeni s ljubavlju
         </div>
         <div id="delivery_france" aria-label="Meat origin information">
-          <div id="delivery_france_ic">
-            <img src="./assets/svg/paris.svg" alt="Paris icon" aria-label="Paris emoticon">
-          </div>
-          <div id="delivery_france_text" aria-label="We buy the best pigs from France">
-            nabavljamo najbolje prasce iz francuske
-          </div>
+          <i class="fa fa-cloud", style="font-size:40px; color:pink;"></i>
+            podjelite ga s bližnjima
         </div>
         </div>
       </article>
 
       <article id="products">
-        <h2 id="products_title">Novo u ponudi ! naručite čvarke online</h2>
+        <h2 id="products_title">Novo u ponudi ! naručite slatkiše online</h2>
         <div id="product_list">
         <?php
         require_once "./db.php";
@@ -376,9 +364,9 @@ function closeNav() {
            foreach($items as $item) {
             echo <<<text
             <div class="product_item">
-             <img src="{$item['url']}" width="280" height="280" alt="Cvarci product Homemade" aria-label="Cvarci Homemade">
-             <div class="product_name" aria-label="Cvarci homemade">{$item['name']}</div>
-             <div class="product_price" aria-label="Price 50 kuna">{$item['price']}</div>
+             <img src="{$item['url']}" width="280" height="280" alt="Candy" aria-label="Candy">
+             <div class="product_name" aria-label="Candy">{$item['name']}</div>
+             <div class="product_price" aria-label="Price">{$item['price']}</div>
              <div class="product_measuring_unit"> / kg</div> <br>
              <div class="product_quantity" aria-label="Quantity of product">Količina:</div>
              <input id="p{$item['id']}-input" class="quantity_input" type="number" name="quantity_input" placeholder="1"> <br>
@@ -390,53 +378,19 @@ function closeNav() {
         ?>
         </div>
       </article>
-
-      <article id="restaurants" aria-label="Restaurants information">
-        <div id="restaurants_title">
-          <h2 aria-label="You can find our cvarke at">Naše čvarke možete pronaći</h2>
-          <button type="button" aria-label="Show all">prikaži sve</button>
+      <div id="instagram_block">
+        <div id="first_igBlock">
+          <h2 id="h2_igBloc">Naši partneri</h2>
         </div>
-        <div id="cards_preview" aria-label="Restaurants preview">
-          <div class="card_preview" aria-label="Burger d'Lice preview">
-            <figure class="food">
-              <img src="./assets/images/burger.png" alt="Burger d'Lice" aria-label="Burger d'Lice burger image" />
-            </figure>
-            <figure>
-              <img src="./assets/svg/burger.svg" alt="Burger d'Lice Logo" aria-label="Burger d'Lice logo" />
-            </figure>
-          </div>
-          <div class="card_preview" aria-label="il Pastficio preview">
-            <figure class="food">
-              <img src="./assets/images/pastificio.png" alt="il Pastficio" aria-label="il Pastficio pasta image" />
-            </figure>
-            <figure>
-              <img src="./assets/svg/pastificio.svg" alt="il Pastficio Logo" aria-label="il Pastficio logo" />
-            </figure>
-          </div>
-          <div class="card_preview" aria-label="Believe preview">
-            <figure class="food">
-              <img src="./assets/images/believe.png" alt="Believe" aria-label="Believe salad image" />
-            </figure>
-            <figure>
-              <img src="./assets/svg/believe.svg" alt="Believe Logo" aria-label="Believe logo" />
-            </figure>
-          </div>
-          <div class="card_preview" aria-label="Vietnamese Bo preview">
-            <figure class="food">
-              <img src="./assets/images/vietnamese.png" alt="Bo Vietnamese" aria-label="Bo dish image" />
-            </figure>
-            <figure>
-              <img src="./assets/svg/vietnamese.svg" alt="Bo Vietnamese Logo" aria-label="Bo logo" />
-            </figure>
-          </div>
+        <div id="second_igBlock">
+          <img src="https://logoeps.com/wp-content/uploads/2012/03/mms-vector.jpg" alt="instagram_picture" aria-label="Kitchen pots" class='instagram_picture'>
+          <img src="https://cdn.worldvectorlogo.com/logos/kras.svg" aria-label="Two people cooking together" class='instagram_picture'>
+          <img src="https://cdn.worldvectorlogo.com/logos/milka-1.svg" alt="instagram_picture" aria-label="Guy making sandwiches" class='instagram_picture'>
+          <img src="https://cdn.worldvectorlogo.com/logos/snickers-5.svg" alt="instagram_picture" aria-label="Boy fixing his motorbike" class='instagram_picture'>
+          <img src="https://cdn.worldvectorlogo.com/logos/twix-3.svg" alt="instagram_picture" aria-label="Guy making sandwiches" class='instagram_picture'>
+          <img src="https://cdn.worldvectorlogo.com/logos/chupa-chups-logo.svg" alt="instagram_picture" aria-label="Boy fixing his motorbike" class='instagram_picture'>
         </div>
-        <span id="left_arrow" role="button" aria-label="List through restaurants preview to the left">
-          <img src="./assets/svg/left_arrow.svg" aria-label="Left arrow" alt="Left arrow" />
-        </span>
-        <span id="right_arrow" role="button" aria-label="List through restaurants preview to the right">
-          <img src="./assets/svg/right_arrow.svg" aria-label="Right arrow" alt="Right arrow" />
-        </span>
-      </article>
+      </div>
       <section id="branding_partner">
         <div id="branding_partner_content">
           <h2 aria-label="Do you want to be our branding partner?">Želite biti naš brand partner ?</h2>
@@ -450,36 +404,49 @@ function closeNav() {
           <button type="submit" aria-label="Send">pošalji</button>
         </form>
       </section>
-      <div id="locationMap">
-        <h2 id="h2_map" aria-label="Where can you find our čvarkomats?">Gdje se nalaze naši <br>
-          čvarkomati ?</h2>
-        <img id="map" src="assets\svg\map.svg" alt="Čvarkomat Locations in the city" aria-label="Map with locations of čvarkomats">
-      </div>
-      <div id="feature_block">
-        <img src="assets\svg\feature_block_klaonice.svg" alt="" class="feature_block_item" aria-label="Number of Butcher houses: 1">
-        <img src="assets\svg\feature_block_vrsta_cvaraka.svg" alt="" class="feature_block_item" aria-label="Number of types of čvarci: 6">
-        <img src="assets\svg\feature_block_restorani.svg" alt="" class="feature_block_item" aria-label="Number of restaurants: 11">
-        <img src="assets\svg\feature_block_najbolja_cijena.svg" alt="" class="feature_block_item" aria-label="Number of best prices: 1">
-      </div>
-      <div id="instagram_block">
-        <div id="first_igBlock">
-          <h2 id="h2_igBloc">#čvarcinet</h2>
-          <h3 id="h3_igBloc">na instagramu</b>
+      <article id="restaurants" aria-label="Restaurants information">
+        <div id="restaurants_title">
+          <h2 aria-label="Our partners">Naši dućani</h2>
+          <button type="button" aria-label="Show all">prikaži sve</button>
         </div>
-        <div id="second_igBlock">
-          <img src="assets\svg\instagram_picture_1.svg" alt="instagram_picture" aria-label="Kitchen pots" class='instagram_picture'>
-          <img src="assets\svg\instagram_picture_2.svg" alt="instagram_picture" aria-label="Two people cooking together" class='instagram_picture'>
-          <img src="assets\svg\instagram_picture_3.svg" alt="instagram_picture" aria-label="Guy making sandwiches" class='instagram_picture'>
-          <img src="assets\svg\instagram_picture_4.svg" alt="instagram_picture" aria-label="Boy fixing his motorbike" class='instagram_picture'>
+        <div id="cards_preview" aria-label="Restaurants preview">
+          <div class="card_preview" aria-label="Burger d'Lice preview">
+            <figure class="food">
+              <img src="https://static5.depositphotos.com/1009051/416/i/950/depositphotos_4168732-stock-photo-in-a-candy-shop.jpg" width="300" height="300" alt="Burger d'Lice" aria-label="Burger d'Lice burger image" />
+            </figure>
+          </div>
+          <div class="card_preview" aria-label="il Pastficio preview">
+            <figure class="food">
+              <img  src="https://media.istockphoto.com/photos/candy-shop-in-barcelona-spain-picture-id157193707"  width="300" height="300" alt="il Pastficio" aria-label="il Pastficio pasta image" />
+            </figure>
+          </div>
+          <div class="card_preview" aria-label="Believe preview">
+            <figure class="food">
+              <img src="https://thumbor.thedailymeal.com/HIPdqdq4T7jK6lk3PkXy6zz4rAQ=/870x565/https://www.thedailymeal.com/sites/default/files/slideshows/1871042/2252426/Methodology.jpg" width="300" height="300"  alt="Believe" aria-label="Believe salad image" />
+            </figure>
+          </div>
+          <div class="card_preview" aria-label="Vietnamese Bo preview">
+            <figure class="food">
+              <img src="https://images.ctfassets.net/wqkd101r9z5s/6vtdRBrEYBX0rKyjRErgOc/e08e5ba71b589cacb2c95bbdbacdddd6/Chocolate-in-Paris-Easter.jpg"  width="300" height="300" alt="Bo Vietnamese" aria-label="Bo dish image" />
+            </figure>
+          </div>
         </div>
-      </div>
+        <span id="left_arrow" role="button" aria-label="List through restaurants preview to the left">
+          <img src="./assets/svg/left_arrow.svg" aria-label="Left arrow" alt="Left arrow" />
+        </span>
+        <span id="right_arrow" role="button" aria-label="List through restaurants preview to the right">
+          <img src="./assets/svg/right_arrow.svg" aria-label="Right arrow" alt="Right arrow" />
+        </span>
+      </article>
     </main>
 
     <footer>
       <div id="footer_first_row">
         <div aria-label="footer_logo">
-          <img src="assets\svg\logo.svg" alt="Čvaci.net logo" aria-label="Čvarci.net logo" class='logo'>
-          <hr id='custom_line'>
+        <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Emoji_u1f36d.svg/2048px-Emoji_u1f36d.svg.png" width="50" height="50" alt="CandyShop logo" aria-label="CandyShop logo" />
+        </figure>
+      <hr id='custom_line'>
         </div>
         <div aria-label="useful_links">
           <a href="http://O_nama.html" class="footer_pages_1" aria-label="About us">O nama</a>
@@ -490,20 +457,20 @@ function closeNav() {
       <div id="footer_second_row">
         <div aria-label="Social Networks">
           <a href="http://instagram.com">
-            <img src="assets\svg\instagram_icon.svg" alt="instagram_icon" class="social_network_icon" aria-label="Link to čvarci.net instagram">
+            <img src="assets\svg\instagram_icon.svg" alt="instagram_icon" class="social_network_icon" aria-label="Link to candyshop.hr instagram">
           </a>
           <a href="http://twitter.com">
-            <img src="assets\svg\twitter_icon.svg" alt="twitter_icon" class="social_network_icon" aria-label="Link to čvarci.net twitter">
+            <img src="assets\svg\twitter_icon.svg" alt="twitter_icon" class="social_network_icon" aria-label="Link to candyshop.hr twitter">
           </a>
           <a href="http://facebook.com">
-            <img src="assets\svg\facebook_icon.svg" alt="facebook_icon" class="social_network_icon" aria-label="Link to čvarci.net facebook" style="padding-right: 0px;">
+            <img src="assets\svg\facebook_icon.svg" alt="facebook_icon" class="social_network_icon" aria-label="Link to candyshop.hr facebook" style="padding-right: 0px;">
           </a>
         </div>
         <div aria-label="Other links">
           <a href="http://polica.com" class="footer_pages_2" aria-label="security policy">Polica privatnosti</a>
           <a href="http://uvjeti_korištenja.com" class="footer_pages_2" aria-label="terms of use">Uvjeti
             korištenja</a>
-          <a href="http://čvarci.net" class="footer_pages_2" aria-label="copyright 2021 čvarci.net" style="padding-right: 0px;">©2021 čvarci.net</a>
+          <a href="http://candyshop.hr" class="footer_pages_2" aria-label="copyright 2021 candyshop.hr" style="padding-right: 0px;">©2021 candyshop.hr</a>
         </div>
       </div>
     </footer>

@@ -22,8 +22,8 @@ div#dropdown {
 #cart-buy-btn {
   padding: 28px 24px;
   width: 100%;
-  background: #ffe145;
-  color: #b79c10;
+  background: #FFE4E8;
+  color: var(--dark);
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
